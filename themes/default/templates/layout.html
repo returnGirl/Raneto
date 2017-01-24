@@ -4,15 +4,18 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
   <title>{{#meta.title}}{{meta.title}} - {{/meta.title}}{{config.site_title}}</title>
   {{#meta.description}}<meta name="description" content="{{meta.description}}">{{/meta.description}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="shortcut icon" href="{{config.base_url}}/favicon.ico">
   <link rel="stylesheet" href="{{config.base_url}}/lib/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{config.base_url}}/lib/highlightjs/styles/solarized_light.css">
+  <!-- <link rel="stylesheet" href="{{config.base_url}}/lib/highlightjs/styles/solarized_light.css"> -->
   <link rel="stylesheet" href="{{config.base_url}}/styles/raneto.css">
-  <link rel="stylesheet" href="{{config.base_url}}/styles/ghostdown.css">
+  <!-- <link rel="stylesheet" href="{{config.base_url}}/styles/ghostdown.css"> -->
+  <link rel="stylesheet" href="{{config.base_url}}/styles/highlight.css">
+  <link rel="stylesheet" href="{{config.base_url}}/styles/markdown.css">
   {{#config.rtl_layout}}
   <link rel="stylesheet" href="{{config.base_url}}/styles/raneto.rtl.css">
   <link rel="stylesheet" href="{{config.base_url}}/lib/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
@@ -54,26 +57,26 @@
                   </ul>
                 </div>
               {{/loggedIn}}
-              {{^loggedIn}}
+              <!-- {{^loggedIn}}
                 &nbsp;<a href="{{config.base_url}}/login" class="btn btn-info">{{lang.login.login}}</a>
-              {{/loggedIn}}
+              {{/loggedIn}} -->
             {{/config.authentication}}
           </form>
           {{/config.googleoauth}}
 
-          <form class="search-form form-inline pull-right" action="{{config.base_url}}/">
+          <!-- <form class="search-form form-inline pull-right" action="{{config.base_url}}/">
             <div class="form-group">
               <label class="sr-only" for="search">{{lang.global.search}}</label>
               <input type="search" class="form-control" name="search" id="search" size="30" value="{{search}}" placeholder="{{lang.global.search}}">
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
   </header>
 
   <!-- Main -->
-  <div class="container-fluid">
+  <div class="container-fluid padding-top-20">
     {{{yield}}}
   </div>
 

@@ -29,8 +29,8 @@
   "bin": "./bin/raneto",
   "main": "./app/index.js",
   "scripts": {
-    "start": "DEBUG=raneto node example/server.js",
-    "start_win": "set DEBUG=raneto&&node example/server.js",
+    "start": "DEBUG=raneto node wzj_diary/server.js",
+    "start_win": "set DEBUG=raneto&&node wzj_diary/server.js",
     "test": "npm run lint & npm run compile & mocha --reporter spec test/*.js",
     "postinstall": "npm update && npm run gulp",
     "gulp": "gulp",
@@ -47,6 +47,7 @@
     "bootstrap": "^3.3.7",
     "bootstrap-rtl": "^3.3.4",
     "browser-sync": "^2.18.6",
+    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.0",

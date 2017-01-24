@@ -2,7 +2,7 @@
 .header {
   color: #CCC;
   background: #2C323D;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .header .container-fluid {
@@ -31,7 +31,7 @@
 
 .menu {
   padding: 0;
-  margin: 40px 20px;
+  margin: 0px 20px;
   list-style: none;
 }
 
@@ -93,12 +93,13 @@
 }
 
 .content {
-  padding: 40px;
-  margin: 40px 20px;
+  padding: 5%;
+  /*margin: 40px 20px;*/
   color: #555;
-  border: 1px solid #E9E9E9;
-  -webkit-box-shadow: 0 1px 50px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 50px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  border-radius: 5px
+  /*-webkit-box-shadow: 0 1px 50px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 50px rgba(0,0,0,0.1);*/
 }
 
 .content .title {
@@ -173,9 +174,11 @@
 }
 
 .footer .copyright {
-  margin: 0 20px 40px 0;
+  margin: 20px 20px 40px 0;
+  width: 250px;
   font-size: 85%;
   color: #999;
+  text-align: right;
 }
 
 .page-excerpt .search-query {
