@@ -29,9 +29,9 @@
   "bin": "./bin/raneto",
   "main": "./app/index.js",
   "scripts": {
-    "start": "DEBUG=raneto node wzj_diary/server.js",
+    "start": "pm2 startOrRestart ./deploy/ecosystem-pro.json",
     "start_win": "set DEBUG=raneto&&node wzj_diary/server.js",
-    "test": "npm run lint & npm run compile & mocha --reporter spec test/*.js",
+    "test": "gulp",
     "postinstall": "npm update && npm run gulp",
     "gulp": "gulp",
     "compile": "babel app/core/src --out-dir app/core/lib",
