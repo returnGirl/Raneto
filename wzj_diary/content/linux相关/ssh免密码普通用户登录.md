@@ -24,3 +24,24 @@ cat copy_key >> authorized_keys
 >2..ssh的权限设置为700， authorized_keys的权限设置为600就够了，属主要是登陆用户自己（root是不行的），组无所谓
 
 完成以上操作后，就能免密码登录了。
+
+#### MAC Shell 快捷命令
+虽然能免密码登录能够一定程度的方便我们，但是每次输入用户名和主机名还是比较麻烦的。
+mac用户可以考虑使用alias命令写个简单的命令。
+不过我更推荐另一种做法：
+
+<br>
+
+>在.ssh文件夹下新建config文件，在其中添加如下内容：
+
+```
+Host returngirl
+    HostName yourhost.cn
+    Port 22
+    User username
+```
+然后每次登陆只需要：
+```
+ssh returngirl
+```
+即可。
