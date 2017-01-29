@@ -1,4 +1,5 @@
-### 基于Raneto改造
+### 基于Raneto改造，使用web-hook进行自动化部署
+网站: http://returngirl.cn
 用于记录自己的生活日志
 感觉这种方式比较合适自己
 
