@@ -92,8 +92,19 @@ css2.1中定义了四个伪元素
 相对长度单位更为合适，而其中，em是最灵活的。因为它随字体大小缩放，所以元素和元素操作能够更为一致。
 
 
+#### CSS实现多行文本省略号
+传统的单行文本省略号
+```css
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+```
 
-
-
+```css
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+```
 
 
