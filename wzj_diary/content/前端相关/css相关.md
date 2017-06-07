@@ -107,4 +107,30 @@ display: -webkit-box;
 overflow: hidden;
 ```
 
+两列布局；右侧固定60px;左侧自适应；案例：搜索框
+
+```css
+#left{ 
+  float: left; 
+  width: 100%; 
+  background: orange;
+  padding-right: 60px;
+}
+#right{ 
+  float: left; 
+  width: 60px; 
+  margin-left: -60px; 
+  background: #ccc;
+}
+```
+
+自适应居中
+```css
+// 父元素
+text-align: center;
+// 子元素
+display: inline-block;
+// 不设置宽度和margin居中
+```
+
 
