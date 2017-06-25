@@ -133,4 +133,52 @@ display: inline-block;
 // 不设置宽度和margin居中
 ```
 
+-- 热门推荐 -- 的效果
+```css
+.name
+  display: inline-block
+  font-size: 18px
+  line-height: 20px
+  color: #666
+  position: relative
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 40px
+    height: 1px
+    background: #777
+    left: -60px
+    top: 50%
+    margin-top: -0.5px
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    width: 40px
+    height: 1px
+    background: #777
+    right: -60px
+    top: 50%
+    margin-top: -0.5px
+```
 
+flex 布局实现垂直居中
+```css
+.foodItem
+  height: 100px
+  display: flex
+  .colItem
+    display: flex
+    align-items: center
+    width: 12%
+    height: 100px
+    overflow: hidden
+```
+
+display: inline-block时的间距问题
+```css
+float: left
+//或者 在父元素设置
+font-size: 0px
+```
