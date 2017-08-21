@@ -1,4 +1,4 @@
-### JSONP的使用---解决跨域请求问题 
+### JSONP的使用---解决跨域请求问题
 JSON with Padding 填充式JSON  
 ```javascript
 function handle(res) { alert("your ip" + res.ip + res.city); }
@@ -41,3 +41,14 @@ return Promise.reject({
 + 一旦某个 then 方法里面的 promise 状态改变为了 rejected，则promise 方法连会跳过后面的 then 直接执行 catch
 
 + catch 方法里面依旧可以返回一个新的 promise 对象
+
+
+### 数据排序
+```javascript
+//并不会返回正确结果
+[1, 3, 4, 10].sort()
+//正确做法
+[1, 3, 4, 10].sort((a, b) => a - b )
+```
+
+
