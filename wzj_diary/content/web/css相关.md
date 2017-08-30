@@ -182,3 +182,10 @@ float: left
 //或者 在父元素设置
 font-size: 0px
 ```
+
+### word-break
+```css
+word-break: normal 
+word-break: break-all 
+word-break: keep-all
+```
